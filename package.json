@@ -1,0 +1,31 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "Notes-making web app with tinyMPC editor",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "deploy": "./deploy.sh",
+    "start": "cd backend && npm start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && node seed.js"
+  },
+  "keywords": [
+    "notes",
+    "editor",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "fetch-cookie": "^3.2.0",
+    "node-fetch": "^3.3.2",
+    "tough-cookie": "^6.0.0"
+  }
+}

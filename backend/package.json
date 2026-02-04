@@ -1,0 +1,26 @@
+{
+  "name": "notes-app-backend",
+  "version": "1.0.0",
+  "description": "Backend for notes-making web app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dompurify": "^3.0.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "jsdom": "^23.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.15.3",
+    "sqlite3": "^5.1.6"
+  }
+}
